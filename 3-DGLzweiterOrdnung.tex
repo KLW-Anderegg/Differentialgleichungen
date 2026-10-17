@@ -159,7 +159,7 @@ von zwei linear unabhängigen Lösungen \(x_1(t)\) und \(x_2(t)\).
 
 
 \pagebreak
-\begin{definition}{Charakteristische Gleichung}{}
+\begin{definition}{charakteristische Gleichung}{}
     Die Gleichung
     \[
         \lambda^2+p\lambda+q=0
@@ -214,7 +214,7 @@ dieser quadratischen Gleichung tritt einer der folgenden drei Fälle auf.
           Da \(x_1\) und \(x_2\) linear unabhängig sind, lautet die
           allgemeine Lösung:
           \[
-              \boxed{x(t)=C_1e^{\lambda_1t}+C_2e^{\lambda_2t}}
+              \boxed{x(t)=c_1e^{\lambda_1t}+c_2e^{\lambda_2t}}
           \]
 
     \item[\textbf{2. Fall:}] \textbf{\(D=0\)}
@@ -266,7 +266,7 @@ dieser quadratischen Gleichung tritt einer der folgenden drei Fälle auf.
           Da \(x_1\) und \(x_2\) linear unabhängig sind, lautet die
           allgemeine Lösung:
           \[
-              \boxed{x(t)=C_1e^{\lambda t}+C_2t e^{\lambda t}}
+              \boxed{x(t)=c_1e^{\lambda t}+c_2t e^{\lambda t}}
           \]
 
     \item[\textbf{3. Fall:}] \textbf{\(D<0\)}
@@ -289,13 +289,13 @@ dieser quadratischen Gleichung tritt einer der folgenden drei Fälle auf.
 
           Die allgemeine komplexe Lösung lautet
           \[
-              z(t)=C_1e^{\lambda t}+C_2e^{\overline{\lambda}t},
-              \qquad C_1,C_2\in\mathbb{C}.
+              z(t)=c_1e^{\lambda t}+c_2e^{\overline{\lambda}t},
+              \qquad c_1,c_2\in\mathbb{C}.
           \]
 
           In der Regel interessieren wir uns für die reellen Lösungen
           der Differentialgleichung. Bei geeigneter Wahl der Konstanten
-          \(C_1,C_2\in\mathbb{C}\) lassen sich diese finden.
+          \(c_1,c_2\in\mathbb{C}\) lassen sich diese finden.
 
           Mit
           \[
@@ -314,19 +314,19 @@ dieser quadratischen Gleichung tritt einer der folgenden drei Fälle auf.
           Die komplexen Lösungen sind also von der Form:
           \begin{align*}
               z(t)
-               & =C_1e^{at}\bigl(\cos(bt)+i\sin(bt)\bigr)
-              +C_2e^{at}\bigl(\cos(bt)-i\sin(bt)\bigr)    \\
-               & =(C_1+C_2)e^{at}\cos(bt)
-              +(C_1-C_2)i\,e^{at}\sin(bt).
+               & =c_1e^{at}\bigl(\cos(bt)+i\sin(bt)\bigr)
+              +c_2e^{at}\bigl(\cos(bt)-i\sin(bt)\bigr)    \\
+               & =(c_1+c_2)e^{at}\cos(bt)
+              +(c_1-c_2)i\,e^{at}\sin(bt).
           \end{align*}
 
-          Mit der Wahl \(C_1=C_2=\frac12\) findet man eine erste reelle Lösung:
+          Mit der Wahl \(c_1=c_2=\frac12\) findet man eine erste reelle Lösung:
           \[
               x_1(t)=e^{at}\cos(bt).
           \]
 
-          Wählt man hingegen \(C_1=-\frac12 i\) und
-          \(C_2=\frac12 i\), erhält man
+          Wählt man hingegen \(c_1=-\frac12 i\) und
+          \(c_2=\frac12 i\), erhält man
           \[
               x_2(t)=e^{at}\sin(bt).
           \]
@@ -334,8 +334,8 @@ dieser quadratischen Gleichung tritt einer der folgenden drei Fälle auf.
           Da \(x_1\) und \(x_2\) linear unabhängig sind, lautet die
           allgemeine reelle Lösung:
           \[
-              \boxed{x(t)=C_1e^{at}\cos(bt)+C_2e^{at}\sin(bt)},
-              \qquad C_1,C_2\in\mathbb{R}.
+              \boxed{x(t)=c_1e^{at}\cos(bt)+c_2e^{at}\sin(bt)},
+              \qquad c_1,c_2\in\mathbb{R}.
           \]
 \end{enumerate}
 
@@ -352,31 +352,31 @@ dieser quadratischen Gleichung tritt einer der folgenden drei Fälle auf.
         \item \textbf{Zwei verschiedene reelle Nullstellen:}
               \(\lambda_1\neq\lambda_2\), \(\lambda_1,\lambda_2\in\mathbb{R}\)
               \[
-                  x(t)=C_1e^{\lambda_1t}+C_2e^{\lambda_2t}.
+                  x(t)=c_1e^{\lambda_1t}+c_2e^{\lambda_2t}.
               \]
 
         \item \textbf{Eine doppelte reelle Nullstelle:}
               \(\lambda_1=\lambda_2=\lambda\in\mathbb{R}\)
               \[
-                  x(t)=C_1e^{\lambda t}+C_2t e^{\lambda t}.
+                  x(t)=c_1e^{\lambda t}+c_2t e^{\lambda t}.
               \]
 
         \item \textbf{Zwei komplex konjugierte Nullstellen:}
               \(\lambda_1=a+bi\), \(\lambda_2=a-bi\),
               mit \(a,b\in\mathbb{R}\) und \(b\neq 0\)
               \[
-                  x(t)=C_1e^{at}\cos(bt)+C_2e^{at}\sin(bt).
+                  x(t)=c_1e^{at}\cos(bt)+c_2e^{at}\sin(bt).
               \]
     \end{enumerate}
 
-    Dabei sind \(C_1,C_2\in\mathbb{R}\) frei wählbare Konstanten.
+    Dabei sind \(c_1,c_2\in\mathbb{R}\) frei wählbare Konstanten.
 \end{satz}
 
 
 
 
 \clearpage
-\section{Aufgaben}
+
 
 \begin{ueb}{Differentialgleichungen 2. Ordnung}{}
     \begin{enumerate}

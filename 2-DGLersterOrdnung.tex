@@ -21,7 +21,7 @@ Tangente mit der Steigung
     m=1+t_0-x_0.
 \]
 
-\begin{LA}{Einführungsaufgabe: Richtungsfelder}{LA:richtungsfelder}
+\begin{LA}{Richtungsfelder}{LA:richtungsfelder}
 
     Berechnen Sie einige Steigungen in Abhängigkeit von \(t\)
     und \(x\) und tragen Sie sie in die Grafik ein.
@@ -1850,15 +1850,15 @@ Das Einführungsbeispiel wird in der Klasse erarbeitet.
 
     \begin{enumerate}
 
-        \item \textbf{Wachstum einer Zelle.}
+        % \item \textbf{Wachstum einer Zelle.}
 
-              Das Volumen \(V\) einer Zelle wachse etwa proportional zu ihrer Oberfläche.
+        %       Das Volumen \(V\) einer Zelle wachse etwa proportional zu ihrer Oberfläche.
 
-              Zeigen Sie, dass unter der Annahme, dass eine Zelle etwa kugelförmig ist,
-              \[
-                  \dot V = k \cdot V^{\frac{2}{3}}
-              \]
-              gilt, und berechnen Sie das zeitliche Verhalten des wachsenden Radius \(r(t)\).
+        %       Zeigen Sie, dass unter der Annahme, dass eine Zelle etwa kugelförmig ist,
+        %       \[
+        %           \dot V = k \cdot V^{\frac{2}{3}}
+        %       \]
+        %       gilt, und berechnen Sie das zeitliche Verhalten des wachsenden Radius \(r(t)\).
 
         \item \textbf{Motorboot.}
 
@@ -1881,16 +1881,16 @@ Das Einführungsbeispiel wird in der Klasse erarbeitet.
                         und welche Strecke hat das Boot dann zurückgelegt?
               \end{enumerate}
 
-        \item \textbf{Torricelli.}
+              % \item \textbf{Torricelli.}
 
-              Ein zylinderförmiges Fass mit Durchmesser \(\SI{1}{\meter}\) und
-              Höhe \(\SI{1}{\meter}\) ist vollständig mit Wasser gefüllt.
-              Am Boden befindet sich ein Loch mit \(\SI{1}{\milli\meter}\) Radius.
+              %       Ein zylinderförmiges Fass mit Durchmesser \(\SI{1}{\meter}\) und
+              %       Höhe \(\SI{1}{\meter}\) ist vollständig mit Wasser gefüllt.
+              %       Am Boden befindet sich ein Loch mit \(\SI{1}{\milli\meter}\) Radius.
 
-              Wie lange dauert es, bis das Fass ausgelaufen ist?
+              %       Wie lange dauert es, bis das Fass ausgelaufen ist?
 
-              \emph{Hinweis:} Verwenden Sie das Gesetz von Torricelli
-              \(v=\sqrt{2gh}\) für die Ausflussgeschwindigkeit.
+              %       \emph{Hinweis:} Verwenden Sie das Gesetz von Torricelli
+              %       \(v=\sqrt{2gh}\) für die Ausflussgeschwindigkeit.
 
         \item \textbf{Fall in Flüssigkeit.}
 
@@ -1933,6 +1933,29 @@ Das Einführungsbeispiel wird in der Klasse erarbeitet.
                         derselben Grösse in Glycerin mit jener der Goldkugel.
               \end{enumerate}
 
+
+        \item \textbf{Luftreibung.}
+
+              Ein Objekt (z.\,B. ein Supraleiter) mit gegebener Masse \(m\)
+              bewege sich auf einer horizontalen Schwebebahn.
+              Zum Zeitpunkt \(t=0\) sei die Anfangsgeschwindigkeit \(v_0\) bekannt.
+
+              Auf den Massepunkt wirke lediglich die Bremskraft, verursacht
+              durch die Luftreibung, welche proportional zum Quadrat der
+              Geschwindigkeit sei (Proportionalitätsfaktor \(k>0\)).
+
+              Berechnen Sie in Abhängigkeit von \(m\), \(v_0\) und \(k\):
+
+              \begin{enumerate}
+                  \item Den Geschwindigkeitsverlauf \(v(t)\) in Abhängigkeit
+                        der Zeit.
+
+                  \item Den Positionsverlauf \(x(t)\) für \(x(0)=0\).
+
+                  \item Die Grenzwerte von Position und Geschwindigkeit
+                        für \(t\to\infty\).
+              \end{enumerate}
+
         \item \textbf{Verbreitung einer Epidemie.}
 
               Gewisse Krankheiten, zum Beispiel Typhus, werden durch Träger
@@ -1964,61 +1987,39 @@ Das Einführungsbeispiel wird in der Klasse erarbeitet.
                         in Abhängigkeit der Parameter \(\alpha\) und \(\beta\).
               \end{enumerate}
 
-        \item \textbf{Luftreibung.}
+              % \item \textbf{Flüssigkeitscontainer.}
 
-              Ein Objekt (z.\,B. ein Supraleiter) mit gegebener Masse \(m\)
-              bewege sich auf einer horizontalen Schwebebahn.
-              Zum Zeitpunkt \(t=0\) sei die Anfangsgeschwindigkeit \(v_0\) bekannt.
+              %       Ein offener, leerer kegelförmiger Tank mit Radius
+              %       \(R=\SI{10}{\deci\meter}\) und Höhe
+              %       \(H=\SI{10}{\deci\meter}\) wird über eine Zuleitung
+              %       ab dem Zeitpunkt \(t=0\) Sekunden mit
+              %       \(\SI{2}{\liter\per\second}\) gefüllt.
 
-              Auf den Massepunkt wirke lediglich die Bremskraft, verursacht
-              durch die Luftreibung, welche proportional zum Quadrat der
-              Geschwindigkeit sei (Proportionalitätsfaktor \(k>0\)).
+              %       \begin{enumerate}
+              %           \item Nach welcher Zeit \(t_E\) ist der Container gefüllt?
 
-              Berechnen Sie in Abhängigkeit von \(m\), \(v_0\) und \(k\):
+              %           \item Leiten Sie eine Differentialgleichung für die Höhe
+              %                 \(h(t)\) des Flüssigkeitsspiegels auf.
 
-              \begin{enumerate}
-                  \item Den Geschwindigkeitsverlauf \(v(t)\) in Abhängigkeit
-                        der Zeit.
+              %                 \emph{Tipp:} Die Wasserzunahme innerhalb einer kleinen
+              %                 Zeitspanne \(\Delta t\) entspricht näherungsweise
+              %                 dem Volumen einer kleinen Zylinderscheibe,
+              %                 die im Kegel einbeschrieben ist.
 
-                  \item Den Positionsverlauf \(x(t)\) für \(x(0)=0\).
+              %           \item Bestimmen Sie die Lösung \(h(t)\) der Differentialgleichung
+              %                 aus b) und die Geschwindigkeit \(v(t)\), mit der sich
+              %                 der Flüssigkeitsspiegel verändert.
 
-                  \item Die Grenzwerte von Position und Geschwindigkeit
-                        für \(t\to\infty\).
-              \end{enumerate}
+              %           \item Kontrollieren Sie \(h(t)\) mit dem Resultat aus a).
 
-        \item \textbf{Flüssigkeitscontainer.}
-
-              Ein offener, leerer kegelförmiger Tank mit Radius
-              \(R=\SI{10}{\deci\meter}\) und Höhe
-              \(H=\SI{10}{\deci\meter}\) wird über eine Zuleitung
-              ab dem Zeitpunkt \(t=0\) Sekunden mit
-              \(\SI{2}{\liter\per\second}\) gefüllt.
-
-              \begin{enumerate}
-                  \item Nach welcher Zeit \(t_E\) ist der Container gefüllt?
-
-                  \item Leiten Sie eine Differentialgleichung für die Höhe
-                        \(h(t)\) des Flüssigkeitsspiegels auf.
-
-                        \emph{Tipp:} Die Wasserzunahme innerhalb einer kleinen
-                        Zeitspanne \(\Delta t\) entspricht näherungsweise
-                        dem Volumen einer kleinen Zylinderscheibe,
-                        die im Kegel einbeschrieben ist.
-
-                  \item Bestimmen Sie die Lösung \(h(t)\) der Differentialgleichung
-                        aus b) und die Geschwindigkeit \(v(t)\), mit der sich
-                        der Flüssigkeitsspiegel verändert.
-
-                  \item Kontrollieren Sie \(h(t)\) mit dem Resultat aus a).
-
-                  \item Berechnen Sie die Werte
-                        \[
-                            v(t_E),\quad v(0),\quad
-                            v\left(\frac{t_E}{2}\right)
-                            \quad\text{und}\quad
-                            h\left(\frac{t_E}{2}\right).
-                        \]
-              \end{enumerate}
+              %           \item Berechnen Sie die Werte
+              %                 \[
+              %                     v(t_E),\quad v(0),\quad
+              %                     v\left(\frac{t_E}{2}\right)
+              %                     \quad\text{und}\quad
+              %                     h\left(\frac{t_E}{2}\right).
+              %                 \]
+              %       \end{enumerate}
 
     \end{enumerate}
 
@@ -2029,20 +2030,20 @@ Das Einführungsbeispiel wird in der Klasse erarbeitet.
 
 \begin{enumerate}
 
-    \item \textbf{Wachstum einer Zelle}
+    % \item \textbf{Wachstum einer Zelle}
 
-          \[
-              \dot V = k\cdot O
-              = k\cdot 4\pi r^2
-              = k_2 r^2
-              = k_3 V^{\frac23}
-          \]
-          \[
-              V(t)=(3k_3t+c)^3,
-              \qquad
-              r(t)=\sqrt[3]{\frac{3}{4\pi}}\,(3k_3t+c).
-          \]
-          Der Radius wächst linear.
+    %       \[
+    %           \dot V = k\cdot O
+    %           = k\cdot 4\pi r^2
+    %           = k_2 r^2
+    %           = k_3 V^{\frac23}
+    %       \]
+    %       \[
+    %           V(t)=(3k_3t+c)^3,
+    %           \qquad
+    %           r(t)=\sqrt[3]{\frac{3}{4\pi}}\,(3k_3t+c).
+    %       \]
+    %       Der Radius wächst linear.
 
     \item \textbf{Motorboot}
 
@@ -2059,18 +2060,18 @@ Das Einführungsbeispiel wird in der Klasse erarbeitet.
               L\approx\SI{1403}{\meter}.
           \]
 
-    \item \textbf{Torricelli}
+          % \item \textbf{Torricelli}
 
-          \[
-              \dot h=-\frac4{10^6}\sqrt{2gh},
-              \qquad
-              h(t)=\left(1-\frac{2\sqrt{2g}}{10^6}t\right)^2.
-          \]
-          \[
-              T=\frac{10^6}{2\sqrt{2g}}
-              \approx\SI{112881}{\second}
-              \approx\SI{31.36}{\hour}.
-          \]
+          %       \[
+          %           \dot h=-\frac4{10^6}\sqrt{2gh},
+          %           \qquad
+          %           h(t)=\left(1-\frac{2\sqrt{2g}}{10^6}t\right)^2.
+          %       \]
+          %       \[
+          %           T=\frac{10^6}{2\sqrt{2g}}
+          %           \approx\SI{112881}{\second}
+          %           \approx\SI{31.36}{\hour}.
+          %   \]
 
     \item \textbf{Fall in Flüssigkeit}
 
@@ -2094,19 +2095,7 @@ Das Einführungsbeispiel wird in der Klasse erarbeitet.
           Bei der Stahlkugel beträgt die Grenzgeschwindigkeit
           das \(0.404\)-Fache jener der Goldkugel.
 
-    \item \textbf{Verbreitung einer Epidemie}
 
-          \[
-              x(t)=x_0e^{-\beta t}
-          \]
-          \[
-              y(t)=y_0
-              e^{-\frac{\alpha x_0}{\beta}(1-e^{-\beta t})}.
-          \]
-          \[
-              \frac{y_\infty}{y_0}
-              =e^{-\frac{\alpha x_0}{\beta}}.
-          \]
 
     \item \textbf{Luftreibung}
 
@@ -2125,34 +2114,47 @@ Das Einführungsbeispiel wird in der Klasse erarbeitet.
               x_\infty=\infty.
           \]
 
-    \item \textbf{Flüssigkeitscontainer}
+    \item \textbf{Verbreitung einer Epidemie}
 
           \[
-              t_E=\frac{500\pi}{3}\,\si{\second},
-              \qquad
-              \dot h(t)=\frac{2}{\pi h(t)^2}.
+              x(t)=x_0e^{-\beta t}
           \]
           \[
-              h(t)=\sqrt[3]{\frac{6t}{\pi}},
-              \qquad
-              v(t)=\sqrt[3]{\frac{2}{9\pi t^2}}.
+              y(t)=y_0
+              e^{-\frac{\alpha x_0}{\beta}(1-e^{-\beta t})}.
           \]
           \[
-              h(t_E)=10\,\si{\deci\meter}.
+              \frac{y_\infty}{y_0}
+              =e^{-\frac{\alpha x_0}{\beta}}.
           \]
-          \[
-              v(t_E)=\frac{1}{50\pi}\,
-              \si{\deci\meter\per\second},
-              \qquad
-              \lim_{t\to0^+}v(t)=\infty.
-          \]
-          \[
-              v\left(\frac{t_E}{2}\right)
-              =\frac{\sqrt[3]{4}}{50\pi}\,
-              \si{\deci\meter\per\second},
-              \qquad
-              h\left(\frac{t_E}{2}\right)
-              =5\sqrt[3]{4}\,\si{\deci\meter}.
-          \]
+          % \item \textbf{Flüssigkeitscontainer}
+
+          %       \[
+          %           t_E=\frac{500\pi}{3}\,\si{\second},
+          %           \qquad
+          %           \dot h(t)=\frac{2}{\pi h(t)^2}.
+          %       \]
+          %       \[
+          %           h(t)=\sqrt[3]{\frac{6t}{\pi}},
+          %           \qquad
+          %           v(t)=\sqrt[3]{\frac{2}{9\pi t^2}}.
+          %       \]
+          %       \[
+          %           h(t_E)=10\,\si{\deci\meter}.
+          %       \]
+          %       \[
+          %           v(t_E)=\frac{1}{50\pi}\,
+          %           \si{\deci\meter\per\second},
+          %           \qquad
+          %           \lim_{t\to0^+}v(t)=\infty.
+          %       \]
+          %       \[
+          %           v\left(\frac{t_E}{2}\right)
+          %           =\frac{\sqrt[3]{4}}{50\pi}\,
+          %           \si{\deci\meter\per\second},
+          %           \qquad
+          %           h\left(\frac{t_E}{2}\right)
+          %           =5\sqrt[3]{4}\,\si{\deci\meter}.
+          %       \]
 
 \end{enumerate}

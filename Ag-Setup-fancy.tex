@@ -123,7 +123,7 @@
 \renewcommand{\sectionmark}[1]{ \markright{#1}{} }
 \lhead[L]{M. Anderegg}
 \chead{}
-\rhead{Algebra~--~\rightmark}
+\rhead{DGL~--~\rightmark}
 \lfoot{}
 \cfoot{\thepage}
 \rfoot{}
@@ -146,7 +146,7 @@
 {bsp} %So wird intern auf die Referenz verwiesen.
 
 \newtcbtheorem[auto counter,  crefname={lernaufgabe}{lernaufgaben},
-	Crefname={Lernaufgabe}{Lernaufgaben}]{LA}{Lernaufgabe}{
+	Crefname={Lernaufgabe}{Lernaufgaben}]{LA}{Einführungsaufgabe}{
 	breakable, enhanced jigsaw, fonttitle=\bfseries, coltitle = black, colbacktitle = cyan!15, righthand width=3cm,
 	sharp corners,boxrule=.4pt,colback=white}{LA}
 
@@ -184,14 +184,33 @@
 \newcommand{\Ra}{\Rightarrow}
 
 
+% \newcommand{\karofeld}[1]{%
+% 	\par\noindent
+% 	\begin{tikzpicture}
+% 		\draw[
+% 			step=4mm,
+% 			lightgray,
+% 			very thin
+% 		] (0,0) grid (\textwidth,#1);
+% 	\end{tikzpicture}%
+% 	\par
+% }
 \newcommand{\karofeld}[1]{%
 	\par\noindent
 	\begin{tikzpicture}
+		% Breite: grösstmögliches Vielfaches von 4 mm
+		\pgfmathtruncatemacro{\anzahlkaros}{
+			floor((\linewidth-0.5pt)/4mm)
+		}
+		% Höhe: nächstgelegenes Vielfaches von 4 mm
+		\pgfmathtruncatemacro{\anzahlzeilen}{
+			floor(#1/0.4)
+		}
 		\draw[
 			step=4mm,
 			lightgray,
 			very thin
-		] (0,0) grid (\textwidth,#1);
+		] (0,0) grid (\anzahlkaros*4mm,\anzahlzeilen*4mm);
 	\end{tikzpicture}%
 	\par
 }
